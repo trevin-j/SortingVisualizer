@@ -5,21 +5,31 @@
 //#include "bsort.h"
 #include "sortingwindow.h"
 
+// t_graphics
+#include "window.h"
 
-using namespace sort_vis;
+// defined subclass of the t_graphics::Program class
+#include "main_program.h"
+
+//
+//int main()
+//{
+//    SortingWindow sorting_window;
+//
+//    sorting_window.create_window();
+//
+//    return sorting_window.run();
+//}
 
 
 int main()
 {
-    SortingWindow sorting_window;
+    t_graphics::MainProgram main_program();
+    t_graphics::Window main_window();
+    main_window.create_window(main_program);
 
-    sorting_window.create_window();
-
-    return sorting_window.run();
+    main_window.run();
 }
-
-
-
 
 
 //int main()

@@ -88,13 +88,19 @@
   <ItemGroup>
     <ClCompile Include="bsort.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="main_program.cpp" />
+    <ClCompile Include="program.cpp" />
     <ClCompile Include="sorter.cpp" />
     <ClCompile Include="sortingwindow.cpp" />
+    <ClCompile Include="window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bsort.h" />
+    <ClInclude Include="main_program.h" />
+    <ClInclude Include="program.h" />
     <ClInclude Include="sorter.h" />
     <ClInclude Include="sortingwindow.h" />
+    <ClInclude Include="window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
