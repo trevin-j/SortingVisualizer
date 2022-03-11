@@ -15,45 +15,45 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="bsort.cpp">
+    <ClCompile Include="Source\bsort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sortingwindow.cpp">
+    <ClCompile Include="Source\sortingwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sorter.cpp">
+    <ClCompile Include="Source\sorter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="window.cpp">
+    <ClCompile Include="Source\window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="program.cpp">
+    <ClCompile Include="Source\program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main_program.cpp">
+    <ClCompile Include="Source\main_program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bsort.h">
+    <ClInclude Include="Headers\bsort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="sortingwindow.h">
+    <ClInclude Include="Headers\sortingwindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="sorter.h">
+    <ClInclude Include="Headers\sorter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="window.h">
+    <ClInclude Include="Headers\window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="program.h">
+    <ClInclude Include="Headers\program.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="main_program.h">
+    <ClInclude Include="Headers\main_program.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

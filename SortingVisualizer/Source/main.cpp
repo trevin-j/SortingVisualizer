@@ -11,10 +11,10 @@
 // defined subclass of the t_graphics::Program class
 #include "main_program.h"
 
-//
+
 //int main()
 //{
-//    SortingWindow sorting_window;
+//    sort_vis::SortingWindow sorting_window;
 //
 //    sorting_window.create_window();
 //

@@ -56,7 +56,7 @@
       <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)dependencies\SFMLx64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)dependencies\SFMLx64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,7 +74,7 @@
       <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)dependencies\SFMLx64\include\;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers;$(SolutionDir)dependencies\SFMLx64\include\;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -86,21 +86,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="bsort.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="main_program.cpp" />
-    <ClCompile Include="program.cpp" />
-    <ClCompile Include="sorter.cpp" />
-    <ClCompile Include="sortingwindow.cpp" />
-    <ClCompile Include="window.cpp" />
+    <ClCompile Include="Source\bsort.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\main_program.cpp" />
+    <ClCompile Include="Source\program.cpp" />
+    <ClCompile Include="Source\sorter.cpp" />
+    <ClCompile Include="Source\sortingwindow.cpp" />
+    <ClCompile Include="Source\window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bsort.h" />
-    <ClInclude Include="main_program.h" />
-    <ClInclude Include="program.h" />
-    <ClInclude Include="sorter.h" />
-    <ClInclude Include="sortingwindow.h" />
-    <ClInclude Include="window.h" />
+    <ClInclude Include="Headers\bsort.h" />
+    <ClInclude Include="Headers\main_program.h" />
+    <ClInclude Include="Headers\program.h" />
+    <ClInclude Include="Headers\sorter.h" />
+    <ClInclude Include="Headers\sortingwindow.h" />
+    <ClInclude Include="Headers\window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
