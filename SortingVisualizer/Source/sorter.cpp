@@ -13,6 +13,7 @@ namespace sort_vis
         int_arr = new int[len];
         current_index = 0;
         alg_name = "NULL";
+        random_seed = std::chrono::system_clock::now().time_since_epoch().count();
     }
 
     void Sorter::init_reset()
@@ -33,9 +34,7 @@ namespace sort_vis
 
     void Sorter::randomize_int_arr()
     {
-        unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
-
-        std::shuffle(int_arr, int_arr + len, std::default_random_engine(seed));
+        std::shuffle(int_arr, int_arr + len, std::default_random_engine(random_seed));
     }
 
     void Sorter::swap(int index1, int index2)

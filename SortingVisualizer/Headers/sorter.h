@@ -56,6 +56,7 @@ namespace sort_vis
 
     private:
         // private fields
+        unsigned random_seed;
 
 
     protected:
