@@ -25,7 +25,7 @@
 int main()
 {
     sort_vis::MainProgram main_program;
-    sort_vis::Window main_window(800, 600, &main_program);
+    sort_vis::Window main_window(1000, 750, &main_program);
 
     return main_window.run();
 }

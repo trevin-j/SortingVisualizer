@@ -7,6 +7,7 @@
 // Algorithm     |  class name
 // ------------------------------
 // Bubble sort   |  Bubble
+// Insertion sort|  Insertion
 
 namespace sort_vis
 {
@@ -75,7 +76,7 @@ namespace sort_vis
     // Probably not the best way to keep track of things, but make sure to update num_sorters as more sorting algorithms are added. This is important so that we don't go out of our memory bounds.
 
 
-    MainProgram::MainProgram() : num_sorters(1)
+    MainProgram::MainProgram() : num_sorters(2)
     {
         if (!font.loadFromFile("Assets/VCR_OSD_MONO.ttf"))
         {
@@ -84,7 +85,7 @@ namespace sort_vis
 
 
         clock.restart();
-        steps_per_sec = 25000;
+        steps_per_sec = 15000;
 
         was_done = false;
         secs_bet_algs = 2;
@@ -95,8 +96,9 @@ namespace sort_vis
 
         
 
-        sorter_list = new Sorter*[1];
+        sorter_list = new Sorter*[num_sorters];
         sorter_list[0] = new Bubble(array_len);
+        sorter_list[1] = new Insertion(array_len);
 
         current_sorter = sorter_list[current_sorter_index];
 

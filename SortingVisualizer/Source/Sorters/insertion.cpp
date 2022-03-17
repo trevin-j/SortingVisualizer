@@ -1,11 +1,8 @@
-#include "sorters/bubble.h"
-#include <algorithm>
-#include <random>
-#include <chrono>
+#include "sorters/insertion.h"
 
 namespace sort_vis
 {
-    void Bubble::step()
+    void Insertion::step()
     {
         if (current_index == sort_end - 1)
         {
@@ -33,16 +30,16 @@ namespace sort_vis
         current_index++;
     }
 
-    Bubble::Bubble(int len) : Sorter(len)
+    Insertion::Insertion(int len) : Sorter(len)
     {
         sort_end = len;
 
         reset();
 
-        alg_name = "Bubble sort (optimized)";
+        alg_name = "Insertion sort";
     }
 
-    void Bubble::reset()
+    void Insertion::reset()
     {
         init_reset();
 
