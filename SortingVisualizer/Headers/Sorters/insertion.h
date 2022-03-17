@@ -26,11 +26,6 @@ namespace sort_vis
     private:
         // private fields
 
-        /// <summary>
-        /// The current last index of what is currently being sorted. Used to speed up bubble sort as it progresses.
-        /// </summary>
-        int sort_end;
-
         void reset();
     };
 }

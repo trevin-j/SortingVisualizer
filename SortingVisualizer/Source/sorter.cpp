@@ -17,6 +17,8 @@ namespace sort_vis
 
     void Sorter::init_reset()
     {
+        current_index = 0;
+
         done = false;
         sorted = false;
 
