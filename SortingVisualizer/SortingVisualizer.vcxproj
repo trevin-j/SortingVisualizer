@@ -86,6 +86,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\sorters\comb.cpp" />
+    <ClCompile Include="Source\sorters\selection.cpp" />
     <ClCompile Include="Source\sorters\insertion.cpp" />
     <ClCompile Include="Source\sorter.cpp" />
     <ClCompile Include="Source\bsort.cpp" />
@@ -97,6 +99,7 @@
     <ClCompile Include="Source\window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Headers\sorters\comb.h" />
     <ClInclude Include="Headers\bsort.h" />
     <ClInclude Include="Headers\main_program.h" />
     <ClInclude Include="Headers\program.h" />
@@ -106,6 +109,7 @@
     <ClInclude Include="Headers\window.h" />
     <ClInclude Include="Headers\sorter.h" />
     <ClInclude Include="Headers\sorters\insertion.h" />
+    <ClInclude Include="Headers\sorters\selection.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
