@@ -85,14 +85,14 @@ namespace sort_vis
 
 
         clock.restart();
-        steps_per_sec = 15000;
+        steps_per_sec = 2000;
 
         was_done = false;
         secs_bet_algs = 2;
 
         current_sorter_index = 0;
 
-        const int array_len = 500;
+        const int array_len = 200;
 
         
 
