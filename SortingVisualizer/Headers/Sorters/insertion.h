@@ -15,16 +15,8 @@ namespace sort_vis
 
         Insertion(int len);
 
-    public:
-        // Public fields
-
     private:
         // Private methods
-
-
-
-    private:
-        // private fields
 
         void reset();
     };

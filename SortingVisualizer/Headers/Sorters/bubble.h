@@ -16,14 +16,11 @@ namespace sort_vis
 
         Bubble(int len);
 
-    public:
-        // Public fields
-
     private:
         // Private methods
 
+        void reset();
         
-
     private:
         // private fields
         
@@ -32,6 +29,5 @@ namespace sort_vis
         /// </summary>
         int sort_end;
 
-        void reset();
     };
 }
