@@ -30,6 +30,8 @@ namespace sort_vis
 
         void next_alg();
 
+        void update_text();
+
 
     private:
         /// <summary>
@@ -48,5 +50,8 @@ namespace sort_vis
         sf::Clock between_algorithms;
         float secs_bet_algs;
         bool was_done;
+
+        sf::Font font;
+        sf::Text algorithm_name_display;
     };
 }

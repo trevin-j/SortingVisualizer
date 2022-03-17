@@ -1,0 +1,1 @@
+This directory must be put in the working directory of the compiled program, or else some features may be missing. For example, this folder includes a font, which is necessary in order to display some text.

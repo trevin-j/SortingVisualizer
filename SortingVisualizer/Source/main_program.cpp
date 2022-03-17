@@ -1,5 +1,7 @@
 #include "main_program.h"
 
+#include <iostream>
+
 #include "sorters.h"
 // Current sorters available:
 // Algorithm     |  class name
@@ -47,6 +49,26 @@ namespace sort_vis
         }
         current_sorter = sorter_list[current_sorter_index];
         current_sorter->reset();
+
+        update_text();
+    }
+
+    void MainProgram::update_text()
+    {
+        // select the font
+        algorithm_name_display.setFont(font); // font is a sf::Font
+
+        // set the string to display
+        algorithm_name_display.setString(current_sorter->alg_name);
+
+        // set the character size
+        algorithm_name_display.setCharacterSize(24); // in pixels, not points!
+
+        // set the color
+        algorithm_name_display.setFillColor(sf::Color::White);
+
+        // set the text style
+        algorithm_name_display.setStyle(sf::Text::Bold);
     }
 
 
@@ -55,6 +77,12 @@ namespace sort_vis
 
     MainProgram::MainProgram() : num_sorters(1)
     {
+        if (!font.loadFromFile("Assets/VCR_OSD_MONO.ttf"))
+        {
+            std::cout << "Failed to load font!" << std::endl;
+        }
+
+
         clock.restart();
         steps_per_sec = 25000;
 
@@ -71,11 +99,14 @@ namespace sort_vis
         sorter_list[0] = new Bubble(array_len);
 
         current_sorter = sorter_list[current_sorter_index];
+
+        update_text();
     }
 
     void MainProgram::draw_frame()
     {
         draw_bars();
+        window->window.draw(algorithm_name_display);
     }
 
     // Draw the bars
