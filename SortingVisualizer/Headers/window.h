@@ -5,13 +5,11 @@
 
 #include "program.h"
 
-// We are giving a different namespace to this Window and the Program class
-// because they are intended to be as modular as possible, and as such they
-// should be able to be used in more projects that use SFML.
-
-// If I make my own library for this, it will likely be called t_graphics or something similar, so we will go with that namespace for now.
-namespace t_graphics
+namespace sort_vis
 {
+    // Declare this so we stop getting errors when it tries to circle include or whatever the heck is going on
+    class Program;
+
     /// <summary>
     /// Overall, the Window class acts as a sort of wrapper for the SFML Window class, along with some extra logic for making the main loop and such easier.
     /// </summary>
@@ -38,13 +36,11 @@ namespace t_graphics
 
         // private fields
     private:
-        /// <summary>
-        /// Window for drawing.
-        /// </summary>
-        sf::RenderWindow window;
+        Program* const program;
 
         int screen_width;
         int screen_height;
+
         
         // public methods
     public:
@@ -52,14 +48,19 @@ namespace t_graphics
         /// <summary>
         /// Run the program in the window. The main loop is contained in this method.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>0 if everything went well, else some other number. If this window is the main window, the return value here will be the return value of the main function.</returns>
         int run();
 
-        /// <summary>
-        /// Create the window where the rendering will take place.
-        /// </summary>
-        void create_window(Program program);
+        Window(int screen_width, int screen_height, Program* const program);
 
-        Window();
+        // Encapsulation is important here because if we want to modify the screen dimensions, it'll need to modify them in the sf::Window as well.
+        int get_screen_width() const;
+        int get_screen_height() const;
+
+    public:
+        /// <summary>
+        /// Window for drawing.
+        /// </summary>
+        sf::RenderWindow window;
     };
 }

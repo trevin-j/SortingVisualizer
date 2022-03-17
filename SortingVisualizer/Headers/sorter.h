@@ -6,25 +6,40 @@ namespace sort_vis
     {
     public:
         // Public methods
-        
+
         /// <summary>
         /// Take a step in the sorting algorithm.
         /// </summary>
-        void step();
+        virtual void step() = 0;
 
         Sorter(int len);
 
-        void reset();
-
+        virtual void reset() = 0;
 
     public:
         // Public fields
+
+        /// <summary>
+        /// The index that the sorter is currently looking at
+        /// </summary>
         int current_index;
+
+        /// <summary>
+        /// The array of integers that will be sorted
+        /// </summary>
         int* int_arr;
+
+        /// <summary>
+        /// The length of the arra.
+        /// </summary>
         int len;
-        bool sorted = false;
+
+        /// <summary>
+        /// Bool representing if the array has been completely finished sorting
+        /// </summary>
         bool done = false;
-        int sort_end;
+
+        std::string alg_name;
 
     private:
         // Private methods
@@ -34,8 +49,22 @@ namespace sort_vis
         /// </summary>
         void randomize_int_arr();
 
+        /// <summary>
+        /// Implemented in subclass if necessary. Basically add any additional reset stuff. This is also called when the algorithm is initialized.
+        /// </summary>
+
     private:
         // private fields
 
+
+    protected:
+        /// <summary>
+        /// Whether what it has checked so far this iteration is sorted.
+        /// </summary>
+        bool sorted = false;
+
+        void init_reset();
+
     };
 }
+

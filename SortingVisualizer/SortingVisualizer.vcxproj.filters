@@ -24,7 +24,7 @@
     <ClCompile Include="Source\sortingwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\sorter.cpp">
+    <ClCompile Include="Source\Sorters\bubble.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source\window.cpp">
@@ -36,6 +36,9 @@
     <ClCompile Include="Source\main_program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\sorter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\bsort.h">
@@ -44,7 +47,7 @@
     <ClInclude Include="Headers\sortingwindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Headers\sorter.h">
+    <ClInclude Include="Headers\Sorters\bubble.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Headers\window.h">
@@ -54,6 +57,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Headers\main_program.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\sorter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\sorters.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

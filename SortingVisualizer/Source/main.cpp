@@ -3,7 +3,7 @@
 //#include <iostream>
 
 //#include "bsort.h"
-#include "sortingwindow.h"
+//#include "sortingwindow.h"
 
 // t_graphics
 #include "window.h"
@@ -24,11 +24,10 @@
 
 int main()
 {
-    t_graphics::MainProgram main_program();
-    t_graphics::Window main_window();
-    main_window.create_window(main_program);
+    sort_vis::MainProgram main_program;
+    sort_vis::Window main_window(800, 600, &main_program);
 
-    main_window.run();
+    return main_window.run();
 }
 
 
