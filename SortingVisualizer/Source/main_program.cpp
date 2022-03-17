@@ -8,7 +8,9 @@
 // ------------------------------
 // Bubble sort   |  Bubble
 // Insertion sort|  Insertion
-// selection sort|  Selection
+// Selection sort|  Selection
+// Comb sort     |  Comb
+// Bogo sort     |  Bogo
 
 namespace sort_vis
 {
@@ -77,7 +79,7 @@ namespace sort_vis
     // not the best way to keep track of things, but make sure to update num_sorters as more sorting algorithms are added. This is important so that we don't go out of our memory bounds.
 
 
-    MainProgram::MainProgram() : num_sorters(4)
+    MainProgram::MainProgram() : num_sorters(5)
     {
         if (!font.loadFromFile("Assets/VCR_OSD_MONO.ttf"))
         {
@@ -102,6 +104,7 @@ namespace sort_vis
         sorter_list[1] = new Insertion(array_len);
         sorter_list[2] = new Selection(array_len);
         sorter_list[3] = new Comb(500);
+        sorter_list[4] = new Bogo(100);
 
         current_sorter = sorter_list[current_sorter_index];
 

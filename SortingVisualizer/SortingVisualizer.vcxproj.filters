@@ -48,6 +48,9 @@
     <ClCompile Include="Source\sorters\comb.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\sorters\bogo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\bsort.h">
@@ -81,6 +84,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Headers\sorters\comb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\sorters\bogo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

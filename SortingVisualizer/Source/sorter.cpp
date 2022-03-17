@@ -45,4 +45,16 @@ namespace sort_vis
         int_arr[index1] = val2;
         int_arr[index2] = val1;
     }
+
+    bool Sorter::validate_sorted()
+    {
+        for (int i = 0; i < len - 1; i++)
+        {
+            if (int_arr[i] > int_arr[i + 1])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 }

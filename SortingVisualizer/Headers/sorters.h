@@ -6,3 +6,4 @@
 #include "sorters/insertion.h"
 #include "sorters/selection.h"
 #include "sorters/comb.h"
+#include "sorters/bogo.h"

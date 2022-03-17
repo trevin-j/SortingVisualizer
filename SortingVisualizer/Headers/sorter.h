@@ -17,6 +17,8 @@ namespace sort_vis
 
         virtual void reset() = 0;
 
+        bool validate_sorted();
+
     public:
         // Public fields
 
@@ -45,10 +47,6 @@ namespace sort_vis
     private:
         // Private methods
 
-        /// <summary>
-        /// Randomize the values in the int_arr array
-        /// </summary>
-        void randomize_int_arr();
 
         /// <summary>
         /// Implemented in subclass if necessary. Basically add any additional reset stuff. This is also called when the algorithm is initialized.
@@ -69,6 +67,10 @@ namespace sort_vis
 
         void swap(int index1, int index2);
 
+        /// <summary>
+        /// Randomize the values in the int_arr array
+        /// </summary>
+        void randomize_int_arr();
     };
 }
 
