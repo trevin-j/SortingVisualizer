@@ -35,4 +35,13 @@ namespace sort_vis
 
         std::shuffle(int_arr, int_arr + len, std::default_random_engine(seed));
     }
+
+    void Sorter::swap(int index1, int index2)
+    {
+        int val1 = int_arr[index1];
+        int val2 = int_arr[index2];
+
+        int_arr[index1] = val2;
+        int_arr[index2] = val1;
+    }
 }

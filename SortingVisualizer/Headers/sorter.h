@@ -66,6 +66,8 @@ namespace sort_vis
 
         void init_reset();
 
+        void swap(int index1, int index2);
+
     };
 }
 

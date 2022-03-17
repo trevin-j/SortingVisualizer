@@ -4,7 +4,11 @@ namespace sort_vis
 {
     void Insertion::step()
     {
-        if (current_index == sort_end - 1)
+
+
+
+
+        /*if (current_index == sort_end - 1)
         {
             if (sorted)
             {
@@ -27,7 +31,7 @@ namespace sort_vis
             sorted = false;
         }
 
-        current_index++;
+        current_index++;*/
     }
 
     Insertion::Insertion(int len) : Sorter(len)
