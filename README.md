@@ -12,6 +12,8 @@ The program was developed using Visual Studio 2022 (preview), using the Visual S
 
 I used the SFML library for graphics. The entire SFML library is included in the project, though many features are not actually used, so one thing I will do when I get the chance is remove the extra features and un-include them in the solution. SFML's license is included in `dependencies\SFMLx64\SFML_license.md`. I made no modifications to the SFML library for this program.
 
+The debug files for SFML are not being tracked by git, so the linker will give warnings, but everything should compile fine.
+
 If you use Visual Studio, the program should compile without problems without needing to do anything extra. All dependencies should be included in the repository.
 
 # Useful Websites
