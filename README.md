@@ -4,7 +4,7 @@ This program is designed to visualize different sorting algorithms using the len
 
 The software is not all that interactive, it just visualizes different sorting algorithms. The neat thing about the program, though, is that you can implement your own sorting algorithms with relative ease by creating a subclass of the Sorter class, and implementing the step() method.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/j0_LjtEMtOA)
 
 # Development Environment
 
@@ -18,12 +18,11 @@ If you use Visual Studio, the program should compile without problems without ne
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [C++ reference](https://www.cplusplus.com/reference/)
 * [Getting started with SFML](https://www.sfml-dev.org/tutorials/2.5/)
 
 # Future Work
 
 * Make adding custom algorithm to the list of algorithms easier.
-* Add support for making a certain pitched sound for the bar that the sorter is currently looking at, based on the largeness of the integer.
+* Add support for audio representation of sorting.
 * Clean up unnecessary dependencies.
